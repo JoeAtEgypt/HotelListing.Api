@@ -33,6 +33,7 @@ builder.Services.AddAutoMapper(typeof(AutoMapperConfig)); // Register AutoMapper
 
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>)); // Register Generic Repository
 builder.Services.AddScoped<ICountriesRepository, CountriesRepository>(); // Register Countries Repository
+builder.Services.AddScoped<IHotelsRepository, HotelsRepository>(); // Register Countries Repository
 
 var app = builder.Build();
 

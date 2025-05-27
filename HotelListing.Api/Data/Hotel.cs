@@ -14,6 +14,3 @@ public class Hotel
     public int CountryId { get; set; } // Foreign key
     public Country? Country { get; set; } // Navigation property
 }
-
-
-

@@ -2,7 +2,8 @@ using System;
 
 namespace HotelListing.Api.Contract;
 
-public interface IGenericRepository<T> where T : class
+public interface IGenericRepository<T>
+    where T : class
 {
     Task<IList<T>> GetAllAsync();
     Task<T> GetAsync(int? id);
